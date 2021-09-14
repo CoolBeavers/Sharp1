@@ -14,13 +14,6 @@ namespace С_1
 
         static void Main(string[] args)
         {
-<<<<<<< HEAD
-            Person person = new Person();
-            Console.WriteLine(person.Name);
-            person.Name = "Петр";
-=======
-          
->>>>>>> 02ec279052a65b5717eb74a923b2454cfb5676c7
         }
     }
 }
