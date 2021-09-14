@@ -24,5 +24,31 @@ namespace С_1.Classes
         public Magazine() : this("Мурзилка", 0, new DateTime(2000, 1, 1), 15) 
         {
         }
+
+        public string NameMag
+        {
+            get { return nameMag; }
+            set { nameMag = value; }
+        }
+        public Frequency PeriodMag
+        {
+            get { return periodMag; }
+            set { periodMag = value; }
+        }
+        public DateTime DateMag
+        {
+            get { return dateMag; }
+            set { dateMag = value; }
+        }
+        public int CountMag
+        {
+            get { return countMag; }
+            set { countMag = value; }
+        }
+        public Article[] ArticleMag
+        {
+            get { return listArticle; }
+            set { listArticle = value; }
+        }
     }
 }
