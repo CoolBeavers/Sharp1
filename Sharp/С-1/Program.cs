@@ -9,6 +9,7 @@ namespace С_1
         {
             Person person = new Person();
             Console.WriteLine(person.Name);
+            person.Name = "Петр";
         }
     }
 }
