@@ -33,6 +33,7 @@ namespace С_1.Classes
 
         public DateTime Birthday
         {
+<<<<<<< HEAD
 
         }
 
@@ -52,6 +53,25 @@ namespace С_1.Classes
         public virtual string ToShortString()
         {
             return Name + " " + Surname;
+=======
+            get { return birthday; }
+            set { birthday = value; }
+        }
+
+        public int BirthdayYear
+        {
+            get { return Birthday.Year; }
+            set { Birthday.AddYears(value); }
+        }
+
+        public override string ToString() {
+            return (Name + Surname + Birthday.ToString());
+        }
+
+        public virtual void ToShortString() 
+        {
+            Console.WriteLine(Name + Surname);
+>>>>>>> 02ec279052a65b5717eb74a923b2454cfb5676c7
         }
     }
 
