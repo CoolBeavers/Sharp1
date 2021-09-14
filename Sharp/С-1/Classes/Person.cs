@@ -16,9 +16,11 @@ namespace С_1.Classes
             surname = surnameValue;
             birthday = birthdayValue;
         }
+
         public Person() : this("Иван", "Иванов", new DateTime(2000, 1, 1))
         {
         }
+
         public string Name
         {
             get { return name; }
@@ -30,6 +32,7 @@ namespace С_1.Classes
             get { return surname; }
             set { surname = value; }
         }
+<<<<<<< HEAD
 
         public DateTime Birthday
         {
@@ -51,6 +54,8 @@ namespace С_1.Classes
         {
             Console.WriteLine(Name + Surname);
         }
+=======
+     
+>>>>>>> parent of 8ca2806 (asd)
     }
-
 }
