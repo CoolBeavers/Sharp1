@@ -32,6 +32,26 @@ namespace С_1.Classes
             get { return surname; }
             set { surname = value; }
         }
-     
+
+        public DateTime Birthday
+        {
+            get { return birthday; }
+            set { birthday = value; }
+        }
+
+        public int BirthdayYear
+        {
+            get { return Birthday.Year; }
+            set { Birthday.AddYears(value); }
+        }
+
+        public override string ToString() {
+            return (Name + Surname + Birthday.ToString());
+        }
+
+        public virtual void ToShortString() 
+        {
+            Console.WriteLine(Name + Surname);
+        }
     }
 }
