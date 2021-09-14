@@ -32,7 +32,6 @@ namespace С_1.Classes
             get { return surname; }
             set { surname = value; }
         }
-<<<<<<< HEAD
 
         public DateTime Birthday
         {
@@ -54,8 +53,5 @@ namespace С_1.Classes
         {
             Console.WriteLine(Name + Surname);
         }
-=======
-     
->>>>>>> parent of 8ca2806 (asd)
     }
 }
