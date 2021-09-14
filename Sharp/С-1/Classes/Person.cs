@@ -16,19 +16,21 @@ namespace С_1.Classes
             surname = surnameValue;
             birthday = birthdayValue;
         }
+
         public Person() : this("Иван", "Иванов", new DateTime(2000, 1, 1))
         {
         }
+
         public string Name
         {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Surname
+        {
+            get { return surname; }
+            set { surname = value; }
         }
      
     }
