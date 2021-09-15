@@ -10,21 +10,22 @@ namespace С_1.Classes
         public Person Author { get; set; }
         public double Raiting { get; set; }
 
-        public Article(string nameArticle, Person authorArticle, double ratingArticle) 
+        public Article(string nameArticle, Person authorArticle, double ratingArticle)
         {
             NameArticle = nameArticle;
             Author = authorArticle;
             Raiting = ratingArticle;
         }
 
-        public Article() 
+        public Article()
         {
             NameArticle = "Программирование";
             Author = new Person("Иван", "Иванов", new DateTime(2000, 1, 1));
             Raiting = 5.0;
         }
 
-        public override string ToString() {
+        public override string ToString()
+        {
             return (NameArticle + Author.ToString() + Raiting.ToString());
         }
     }

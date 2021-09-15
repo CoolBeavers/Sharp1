@@ -3,24 +3,24 @@ using С_1.Classes;
 
 namespace С_1
 {
-    partial class Program
+    class Program
     {
+<<<<<<< HEAD
         public enum Frequency
         {
             Weekly,
             Monthly,
             Yearly
         }
-
+        
         static void Main(string[] args)
         {
-<<<<<<< HEAD
+=======
+        static void Main(string[] args)
+        {
             Person person = new Person();
             Console.WriteLine(person.Name);
-            person.Name = "Петр";
-=======
-          
->>>>>>> 02ec279052a65b5717eb74a923b2454cfb5676c7
+>>>>>>> parent of 02ec279 (+Article, Magazin)
         }
     }
 }
