@@ -11,7 +11,9 @@ namespace С_1.Classes
         private Frequency periodMag;
         private DateTime dateMag;
         private int countMag;
-        private Article[] listArticle;
+        private List<Article> listArticle = new List<Article>();
+
+        private Article _article;
 
         public Magazine(string _nameMag, Frequency _periodMag, DateTime _dateMag, int _countMag) 
         {
@@ -45,10 +47,32 @@ namespace С_1.Classes
             get { return countMag; }
             set { countMag = value; }
         }
-        public Article[] ArticleMag
+        public List<Article> ArticleMag
         {
             get { return listArticle; }
             set { listArticle = value; }
+        }
+        public double MiddleRat
+        {
+            get { return _article.sumRait/_article.countArticle; }
+        }
+
+        public bool this[Frequency _frequency] => _frequency == periodMag;
+
+        private void AddArticles(params Article[] args) 
+        {
+            listArticle.AddRange(args);
+        }
+
+        public override string ToString()
+        {
+            return "\nНазвание журнала: " + nameMag + "\n Период: " + periodMag + "\nДата выхода: " + dateMag + "\nТираж: " + countMag;
+
+        }
+
+        public virtual string ToShortString()
+        {
+            return "\nНазвание журнала: " + nameMag + "\n Период: " + periodMag + "\nДата выхода: " + dateMag + "\nСредний рейтинг: " + MiddleRat;
         }
     }
 }

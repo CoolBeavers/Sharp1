@@ -10,11 +10,17 @@ namespace С_1.Classes
         public Person Author { get; set; }
         public double Raiting { get; set; }
 
+        public double sumRait = 0.0;
+        public int countArticle = 0;
+
         public Article(string nameArticle, Person authorArticle, double ratingArticle)
         {
             NameArticle = nameArticle;
             Author = authorArticle;
             Raiting = ratingArticle;
+
+            countArticle++;
+            sumRait += ratingArticle;
         }
 
         public Article()
