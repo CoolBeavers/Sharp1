@@ -10,8 +10,9 @@ namespace С_1.Classes
         public Person Author { get; set; }
         public double Raiting { get; set; }
 
-        public double sumRait = 0.0;
-        public int countArticle = 0;
+        private static Random rnd = new Random();
+        public double sumRait = rnd.Next(0, 5);
+        public int countArticle = 1;
 
         public Article(string nameArticle, Person authorArticle, double ratingArticle)
         {
@@ -32,7 +33,7 @@ namespace С_1.Classes
 
         public override string ToString()
         {
-            return (NameArticle + Author.ToString() + Raiting.ToString());
+            return ("Название статьи: " + NameArticle + "\nАвтор: " + Author.Name + " " + Author.Surname + "\nДата рождения: " + Author.Birthday.ToLongDateString());
         }
     }
 }

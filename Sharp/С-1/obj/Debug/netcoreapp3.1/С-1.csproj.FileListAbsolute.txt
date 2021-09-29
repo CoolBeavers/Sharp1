@@ -1,0 +1,13 @@
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\bin\Debug\netcoreapp3.1\С-1.exe
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\bin\Debug\netcoreapp3.1\С-1.deps.json
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\bin\Debug\netcoreapp3.1\С-1.runtimeconfig.json
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\bin\Debug\netcoreapp3.1\С-1.runtimeconfig.dev.json
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\bin\Debug\netcoreapp3.1\С-1.dll
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\bin\Debug\netcoreapp3.1\С-1.pdb
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\obj\Debug\netcoreapp3.1\С-1.csprojAssemblyReference.cache
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\obj\Debug\netcoreapp3.1\С-1.AssemblyInfoInputs.cache
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\obj\Debug\netcoreapp3.1\С-1.AssemblyInfo.cs
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\obj\Debug\netcoreapp3.1\С-1.csproj.CoreCompileInputs.cache
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\obj\Debug\netcoreapp3.1\С-1.dll
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\obj\Debug\netcoreapp3.1\С-1.pdb
+C:\Users\Вадим\Documents\GitHub\Sharp1\Sharp\С-1\obj\Debug\netcoreapp3.1\С-1.genruntimeconfig.cache

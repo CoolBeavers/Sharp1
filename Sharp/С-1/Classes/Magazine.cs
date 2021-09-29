@@ -13,7 +13,7 @@ namespace С_1.Classes
         private int countMag;
         private List<Article> listArticle = new List<Article>();
 
-        private Article _article;
+        private Article _article = new Article();
 
         public Magazine(string _nameMag, Frequency _periodMag, DateTime _dateMag, int _countMag) 
         {
@@ -59,20 +59,22 @@ namespace С_1.Classes
 
         public bool this[Frequency _frequency] => _frequency == periodMag;
 
-        private void AddArticles(params Article[] args) 
+        public void AddArticles(params Article[] _args) 
         {
-            listArticle.AddRange(args);
+            listArticle.AddRange(_args);
         }
 
         public override string ToString()
         {
-            return "\nНазвание журнала: " + nameMag + "\n Период: " + periodMag + "\nДата выхода: " + dateMag + "\nТираж: " + countMag;
+            foreach (Article _art in listArticle)
+                Console.WriteLine(_art.ToString() + "\nРейтинг: " + _art.Raiting + "\n");
+            return "------ \nНазвание журнала: " + nameMag + "\nПериод: " + periodMag + "\nДата выхода: " + dateMag.ToLongDateString() + "\nТираж: " + countMag + "\n------\n";
 
         }
 
         public virtual string ToShortString()
         {
-            return "\nНазвание журнала: " + nameMag + "\n Период: " + periodMag + "\nДата выхода: " + dateMag + "\nСредний рейтинг: " + MiddleRat;
+            return "Название журнала: " + nameMag + "\nПериод: " + periodMag + "\nДата выхода: " + dateMag.ToLongDateString() + "\nСредний рейтинг: " + MiddleRat;
         }
     }
 }
