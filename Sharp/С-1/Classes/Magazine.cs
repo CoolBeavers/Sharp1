@@ -11,9 +11,9 @@ namespace С_1.Classes
         private Frequency periodMag;
         private DateTime dateMag;
         private int countMag;
-        private List<Article> listArticle = new List<Article>();
 
-        private Article _article = new Article();
+        private static Article _article = new Article();
+        private Article[] listArticle = new Article[_article.countArticle];
 
         public Magazine(string _nameMag, Frequency _periodMag, DateTime _dateMag, int _countMag) 
         {
@@ -47,11 +47,6 @@ namespace С_1.Classes
             get { return countMag; }
             set { countMag = value; }
         }
-        public List<Article> ArticleMag
-        {
-            get { return listArticle; }
-            set { listArticle = value; }
-        }
         public double MiddleRat
         {
             get { return _article.sumRait/_article.countArticle; }
@@ -61,7 +56,8 @@ namespace С_1.Classes
 
         public void AddArticles(params Article[] _args) 
         {
-            listArticle.AddRange(_args);
+            for (int i = 0; i < _args.Length; i++) 
+                Console.WriteLine(_args[i] + "\n");
         }
 
         public override string ToString()

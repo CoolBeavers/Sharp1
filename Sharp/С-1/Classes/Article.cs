@@ -12,7 +12,7 @@ namespace С_1.Classes
 
         private static Random rnd = new Random();
         public double sumRait = rnd.Next(0, 5);
-        public int countArticle = 1;
+        public int countArticle = 0;
 
         public Article(string nameArticle, Person authorArticle, double ratingArticle)
         {
