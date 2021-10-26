@@ -1,19 +1,27 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using С_1.Interface;
 using static С_1.Program;
 
 namespace С_1.Classes
 {
-    class Magazine
+    class Magazine : Edition
     {
+        private IRateAndCopy _iRateAndCopy;
+
         private string nameMag;
         private Frequency periodMag;
         private DateTime dateMag;
         private int countMag;
 
+        private ArrayList listEditor = new ArrayList();
+        private ArrayList listArticle = new ArrayList();
+
+
+        private Edition _edition { get; set; }
         private static Article _article = new Article();
-        private Article[] listArticle = new Article[_article.countArticle];
 
         public Magazine(string _nameMag, Frequency _periodMag, DateTime _dateMag, int _countMag) 
         {
@@ -60,6 +68,26 @@ namespace С_1.Classes
                 Console.WriteLine(_args[i] + "\n");
         }
 
+        public void AddEditors(params Person[] _args)
+        {
+            for (int i = 0; i < _args.Length; i++)
+                Console.WriteLine(_args[i] + "\n");
+        }
+
+        public IEnumerable GetArtic(double it)
+        {
+            foreach (Article _art in listArticle) 
+                if (_art.Raiting > it)
+                    yield return _art.ToString();
+        }
+
+        public IEnumerable GetNameArtic(string it)
+        {
+            foreach (Article _art in listArticle)
+                if (_art.NameArticle.IndexOf(it) > 0)
+                    yield return _art.ToString();
+        }
+
         public override string ToString()
         {
             foreach (Article _art in listArticle)
@@ -71,6 +99,11 @@ namespace С_1.Classes
         public virtual string ToShortString()
         {
             return "Название журнала: " + nameMag + "\nПериод: " + periodMag + "\nДата выхода: " + dateMag.ToLongDateString() + "\nСредний рейтинг: " + MiddleRat;
+        }
+
+        public virtual object DeepCopy()
+        {
+            return 1;
         }
     }
 }

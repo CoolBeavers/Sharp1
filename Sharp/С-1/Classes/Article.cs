@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using С_1.Interface;
 
 namespace С_1.Classes
 {
     class Article
     {
+        private IRateAndCopy _iRateAndCopy;
         public string NameArticle { get; set; }
         public Person Author { get; set; }
         public double Raiting { get; set; }
@@ -34,6 +36,11 @@ namespace С_1.Classes
         public override string ToString()
         {
             return ("Название статьи: " + NameArticle + "\nАвтор: " + Author.Name + " " + Author.Surname + "\nДата рождения: " + Author.Birthday.ToLongDateString());
+        }
+
+        public virtual object DeepCopy() 
+        {
+            return 1;
         }
     }
 }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EN54B/euZ5DBAT1pLNjI9ULEoHvfLkGLH/DR1l4Ce/MDpDXuLGUYLfAWOqGVlFodesQm3ngtD6TtxCKdeAqhyg==",
+  "dgSpecHash": "YZhVTtGeCjl7edqOF1SIYwiDvzoRmg6ku1/yRKulobfWzw1P0FpVuFWfn5BoS6wJVlj/RYVCZG+ak8VHqUq0Zw==",
   "success": true,
-  "projectFilePath": "D:\\Sharp1\\Sharp\\С-1\\С-1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Вадим\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\С-1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Вадим\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
   "logs": []
 }
