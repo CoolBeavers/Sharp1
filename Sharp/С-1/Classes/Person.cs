@@ -53,5 +53,52 @@ namespace С_1.Classes
         {
             Console.WriteLine(Name + Surname);
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            Person objPers = obj as Person;
+            if (obj as Person == null)
+            {
+                return false;
+            }
+            return objPers.Name == name && objPers.Surname == Surname && objPers.Birthday == birthday;
+        }
+        public override int GetHashCode()
+        {
+            int hashcode = 0;
+            char[] NameChar = Name.ToCharArray();
+
+            foreach (char ch in NameChar)
+            {
+                hashcode += Convert.ToInt32(ch);
+            }
+            char[] SurnameChar = Surname.ToCharArray();
+            foreach (char ch in SurnameChar)
+            {
+                hashcode += Convert.ToInt32(ch);
+            }
+            hashcode += Birthday.Year * Birthday.Month;
+            return hashcode;
+        }
+        public static bool operator ==(Person lpers, Person rpers)
+        {
+            if (ReferenceEquals(lpers, rpers))
+            {
+                return true;
+            }
+            if ((object)lpers == null || (object)rpers == null)
+            {
+                return false;
+            }
+            return lpers.Name == rpers.Name && lpers.birthday == rpers.Birthday && lpers.Surname == rpers.Surname;
+        }
+        public static bool operator !=(Person lpers, Person rpers)
+        {
+            return !(lpers == rpers);
+        }
     }
 }

@@ -49,7 +49,7 @@ namespace С_1.Classes
         }
         public double MiddleRat
         {
-            get { return _article.sumRait/_article.countArticle; }
+            get { return(_article.countArticle == 0) ? 4.5 : _article.sumRait/_article.countArticle; }            
         }
 
         public bool this[Frequency _frequency] => _frequency == periodMag;
