@@ -103,7 +103,7 @@ namespace С_1.Classes
 
         public virtual object DeepCopy()
         {
-            return 1;
+            return new Magazine(this.nameMag, this.periodMag, this.dateMag, this.countMag); ;
         }
     }
 }

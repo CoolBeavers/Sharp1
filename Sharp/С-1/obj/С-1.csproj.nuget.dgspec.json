@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Вадим\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\С-1.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\С-1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Вадим\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\С-1.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\С-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Вадим\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\С-1.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\С-1.csproj",
         "projectName": "С-1",
-        "projectPath": "C:\\Users\\Вадим\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\С-1.csproj",
-        "packagesPath": "C:\\Users\\Вадим\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Вадим\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\С-1.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Sharp1\\Sharp\\С-1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Вадим\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -52,18 +47,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.13, 3.1.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.415\\RuntimeIdentifierGraph.json"
         }
       }
     }

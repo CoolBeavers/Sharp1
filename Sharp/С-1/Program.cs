@@ -35,6 +35,34 @@ namespace С_1
 
             Console.WriteLine(_magazine.ToString());
 
+            Edition _edition = new Edition("Окружающий мир", new DateTime(2021, 9, 11), 4);
+            Edition _edition1 = new Edition("Окружающий мир", new DateTime(2021, 9, 11), 4);
+            Console.WriteLine(_edition.ToString());
+            Console.WriteLine(_edition1.ToString());
+
+            Console.WriteLine(_edition.Equals(_edition1));
+            Console.WriteLine(_edition == _edition1);
+            Console.WriteLine(string.Format(" _edition: {0}, _edition1: {1} ", _edition.GetHashCode(), _edition1.GetHashCode()));
+
+            try
+            {
+                _edition.tirageEdition = -2;
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            Magazine _magazine1 = (Magazine)_magazine.DeepCopy();
+            _magazine.NameMag = "NFS";
+            _magazine.CountMag = 11;
+            Console.WriteLine(_magazine.ToString());
+            Console.WriteLine(_magazine1.ToString());
+
+            foreach (var a in _magazine.GetArtic(2))
+                Console.WriteLine(a);
+            foreach (var b in _magazine.GetNameArtic("Программирование"))
+                Console.WriteLine(b);
 
             Console.Write("Введите число столбцов и строк через разделители '/', ' ', '_', '*': ");
             string[] temp = Console.ReadLine().Split('/', ' ', '_', '*');

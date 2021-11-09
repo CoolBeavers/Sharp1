@@ -8,7 +8,23 @@ namespace С_1.Classes
     {
         protected string nameEdition { get; set; }
         protected DateTime dateEdition { get; set; }
-        protected int tirageEdition;
+        protected int _tirageEdition;
+
+        public int tirageEdition
+        {
+            get { return _tirageEdition; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException("Registration number must be more than 0 ");
+                }
+                else
+                {
+                    _tirageEdition = value;
+                }
+            }
+        }
 
         public Edition(string _nameEdition, DateTime _dateEdition, int _tirageEdition) 
         {
